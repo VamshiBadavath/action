@@ -9,6 +9,6 @@ jobs:
         - name: checkout repo
           uses: actions/checkout@v4
         - name: excuting the shell
-          run: 
+          run: |
             chmod +x shell-script.sh
             ./shell-script.sh
