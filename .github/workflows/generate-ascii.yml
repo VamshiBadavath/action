@@ -11,4 +11,4 @@ jobs:
         - name: excuting the shell
           run: 
             chmod +x ./shell-script.sh
-            ./shell-scrit.sh
+            shell-scrit.sh
