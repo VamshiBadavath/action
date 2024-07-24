@@ -1,0 +1,16 @@
+name: generating a ascii key
+
+on: push
+
+jobs:
+    ascii-job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout repo
+          uses: actions/checkout@v4
+        - name: installing cowsay
+          run: sudo apt-get install cowsay -y
+        - name: generating ascii
+          run: fortune | cowsay -f dragon >> fortune.txt
+        - name: displaying the key
+          run: cat fortune.txt
