@@ -8,9 +8,7 @@ jobs:
         steps:
         - name: checkout repo
           uses: actions/checkout@v4
-        - name: installing cowsay
-          run: sudo apt-get install cowsay -y
-        - name: generating ascii
-          run: fortune | cowsay -f dragon >> fortune.txt
-        - name: displaying the key
-          run: cat fortune.txt
+        - name: excuting the shell
+          run: 
+            chmod +x ./shell-script.sh
+            ./shell-scrit.sh
