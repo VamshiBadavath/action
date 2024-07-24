@@ -10,5 +10,5 @@ jobs:
           uses: actions/checkout@v4
         - name: excuting the shell
           run: 
-            chmod +x ./shell-script.sh
-            shell-scrit.sh
+            chmod +x shell-script.sh
+            ./shell-scrit.sh
